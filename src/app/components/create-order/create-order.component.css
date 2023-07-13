@@ -1,0 +1,133 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh; 
+}
+
+.flex-rows {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.flex-item {
+  display: flex;
+  margin-left: 33px;
+  flex-direction: column;
+
+  margin-right: 10px;
+  width: 90%; /* Adjust the width as needed */
+}
+
+.flex-items {
+  display: flex;
+  margin-left: 65px;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.button-container {
+  display: flex;
+  margin-left:40%;
+  margin-top: 20px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.fl-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.fl-table th,
+.fl-table td {
+  text-align: center;
+  padding: 8px;
+}
+
+.fl-table th {
+  background-color: #f8f9fa;
+}
+
+.fl-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .fl-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .fl-table thead,
+  .fl-table tbody,
+  .fl-table th,
+  .fl-table td,
+  .fl-table tr {
+    display: block;
+  }
+
+  .fl-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .fl-table tbody tr {
+    border: 1px solid #ccc;
+  }
+
+  .fl-table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  .fl-table td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .fl-table td:nth-of-type(1):before {
+    content: "S.No";
+  }
+
+  .fl-table td:nth-of-type(2):before {
+    content: "Name";
+  }
+
+  .fl-table td:nth-of-type(3):before {
+    content: "Units";
+  }
+
+  .fl-table td:nth-of-type(4):before {
+    content: "Quantity";
+  }
+
+  .fl-table td:nth-of-type(5):before {
+    content: "Price";
+  }
+
+  .fl-table td:nth-of-type(6):before {
+    content: "Amount";
+  }
+
+  .fl-table td:nth-of-type(7):before {
+    content: "Delete";
+  }
+
+  .fl-table td:nth-of-type(8):before {
+    content: "Edit";
+  }
+}
